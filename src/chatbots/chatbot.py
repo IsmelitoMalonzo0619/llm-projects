@@ -34,5 +34,5 @@ def chat(message, history):
 
 if __name__ == "__main__":
     print("Starting the chatbot...")
-    gr.ChatInterface(fn=chat, type="messages").launch()
+    gr.Interface(fn=chat, inputs=["text", "text"], outputs="text").launch()
     print("Ending the chatbot...")
